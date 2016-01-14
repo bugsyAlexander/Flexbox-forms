@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Flexbox Forms</title> 
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+  <header>
+     <h1>Creating Responsive Forms with Flexbox</h1>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime doloremque enim recusandae quasi minus, rerum! Pariatur modi illum delectus perferendis doloremque ea, similique deserunt quidem animi labore error esse expedita!</p>
+
+     <h2>Short Forms</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet doloremque necessitatibus cumque dolore hic dignissimos odit est! Mollitia sed esse consectetur totam ab quibusdam molestias tempore impedit voluptatum ratione.</p>
+  </header>
+  <article class="example">
+    <form action="" class="search-form">
+      <input type="search" name="search" placeholder="Search this site" class="search-input">
+      <button type="submit" class="search-btn">Search</button>
+    </form>
+  </article>
+
+<br><hr>
+
+<!-- Longer form structure -->
+  <article class="example">
+    <form action="" class="register-form">
+
+   <section class="form-group">
+    <h3>Personal Info</h3>
+      <ul class="form-fields">
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Your full name" class="text-input">
+        </li>
+
+        <li>
+          <label for="street-address">Street address:</label>
+          <input type="text" name="street-address" id="street-address" placeholder="Your street address" class="text-input">
+        </li>
+
+        <li>
+          <label for="city">City:</label>
+          <input type="text" name="city" id="city" placeholder="City" class="text-input">
+        </li>
+
+        <li>
+          <label for="state">State:</label>
+          <select name="state" class="select-menu" id="state">
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+          </select>
+        </li>
+        <!-- end state -->
+
+        <li>
+          <label for="street-zip">Zip code:</label>
+          <input type="text" name="zip-code" id="zip-code" placeholder="Zip code" class="text-input">
+        </li>
+
+        <li>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Confirmation email" class="text-input">
+        </li>
+      </ul>
+
+      <h4>Registration Info</h4>
+      <p>This info will be on your badge and help us match you with information and events throughout the conference.
+
+      <ul class="form-fields">
+        <li>
+          <label for="description">Primary role:</label>
+            <select class="select-menu" id="description" name="description">
+              <option value="designer">Designer</option>
+              <option value="developer">Developer</option>
+              <option value="other">Other</option>
+            </select>
+        </li>
+
+        <li>
+          <label for="job-title">Job title:</label>
+          <input type="text" name="job-title" id="job-title" placeholder="Job title" class="text-input">
+        </li>
+
+        <li>
+          <label for="company">Company:</label>
+          <input type="text" name="company" id="company" placeholder="Company" class="text-input">
+        </li>
+
+        <li>
+          <label for="phone">Phone:</label>
+          <input type="tel" name="phone" id="phone" placeholder="Your phone number" class="text-input">
+        </li>
+      </ul>
+    </section>
+
+    <section class="form-group">
+      <h3>Sessions</h3>
+      <h4>Skills</h4>
+      <p>Listing skills will help us match up our break out sessions and lunch!</p>
+      <ul class="form-skills">
+        <li><input type="checkbox" id="css" value="css"> <label for="css">CSS</label></li>
+        <li><input type="checkbox" id="html" value="html"> <label for="html">HTML</label></li>
+        <li><input type="checkbox" id="js" value="js"> <label for="js">JavaScript</label></li>
+        <li><input type="checkbox" id="content" value="content"> <label for="content">Content Strategy</label></li>
+        <li><input type="checkbox" id="ux" value="ux"> <label for="ux">UX</label></li>
+        <li><input type="checkbox" id="rails" value="rails"> <label for="rails">Rails</label></li>
+        <li><input type="checkbox" id="node" value="node"> <label for="node">Node</label></li>
+        <li><input type="checkbox" id="sass" value="sass"> <label for="sass">SASS</label></li>
+        <li><input type="checkbox" id="mobile" value="mobile"> <label for="mobile">Mobile</label></li>
+      </ul>
+
+    <h4>Workshops</h4>
+    <p>Workshops are half-day, hands-on classes. Each are an additional $50.</p>
+    <ul class="form-workshop">
+      <li>
+        <input type="checkbox" id="forms-ws" value="forms">
+        <label for="forms-ws">Creating Responsive Forms with Flexbox</label>
+      </li>
+
+      <li>
+        <input type="checkbox" id="jekyll-ws" value="jekyll">
+        <label for="jekyll-ws">Blogging with Jekyll</label>
+      </li>
+
+      <li>
+        <input type="checkbox" id="usability-ws" value="usability">
+        <label for="usability-ws">Usability Testing with Cats</label>
+      </li>
+
+      <li>
+        <input type="checkbox" id="node-ws" value="node">
+        <label for="node-ws">Building Stuff with Node</label>
+      </li>
+    </ul>
+
+    <h4>Lunch</h4>
+    <p>Lunch is provided each day. We have vegetarian options as well as gluten-free choices available. Please let us know about any food allergies or dietary restrictions.</p>
+
+    <ul class="form-food">
+      <li>
+        <input type="radio" id="meat" value="meat" name="food">
+        <label for="meat">Chicken, Beef, or Fish</label>
+      </li>
+
+      <li>
+        <input type="radio" id="vegetarian" value="vegetarian" name="food">
+        <label for="vegetarian">Vegetarian</label>
+      </li>
+
+      <li>
+        <input type="radio" id="gluten" value="gluten" name="food">
+        <label for="gluten">Gluten Free</label>
+      </li>
+
+      <li>
+        <label for="food-options">Please list any dietary restrictions:</label>
+        <textarea id="food-options" name="food-options" class="text-area">Food allergies or other restrictions</textarea>
+      </li>
+    </ul>
+  </section>
+
+  <section class="form-submit">
+    <h4>All finished?</h4>
+    <p>We're looking forward to seeing you!</p>
+    <button type="submit" class="register-btn">Register</button>
+  </section>
+<!-- End Longer form structure -->
+
+    </form>
+  </article>
+
+  <footer>@bugsyAlexander</footer>
+
+  </body>
+</html>

@@ -1,0 +1,220 @@
+html, body, article, section, aside, footer, nav {
+  display: block;
+  padding: 0;
+}
+
+html {
+  background-color: #8b798c;
+}
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ }
+
+body {
+  width: 99%;
+  margin: 0 auto;
+  color: #666;
+  max-width: 65rem;
+  min-height: 100vh;
+  line-height: 1.4;
+  background-color: white;
+  padding: 1rem;
+}
+
+h1, h2, h3, h4 {
+  color: #8b798c;
+}
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 2rem 0 1rem 0;
+  margin-top: 2rem;
+}
+
+/*
+  Search form styles
+*/
+.search-form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+button[type='submit'], input[type='search'] {
+  box-sizing: border-box;
+  border: none;
+  font-weight: 300;
+  padding: 0.35rem 0.75rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+input[type='search'] {
+  background-color: #e9e9e9;
+  /* scroll bar fix */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* no line breaks */
+  white-space: nowrap;
+  max-height: 3rem;
+  letter-spacing: 0.025rem;
+ }
+
+button[type='submit'] {
+  border-radius: 0px 2px 2px 0px;
+  background-color: #8b798c;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 0.05rem;
+}
+
+button[type='submit']:hover {background-color: #8B995E}
+
+/* Search form flexbox styles */
+.search-form {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* Use ratio to flex child elements */
+input[type='search'] {
+  /* at least 250px min */
+  flex: 2 0 auto;
+}
+
+button[type='submit'] {
+  flex: 1 0 auto;
+}
+
+@media (max-width: 28.125rem) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+
+/* Longer form structure styles */
+.form-group {
+  background: #eee;
+  margin-bottom: 1em;
+  padding: 10px;
+}
+
+.form-group ul {
+  list-style: none;
+  margin: 0 0 2em;
+  padding: 0;
+}
+
+.form-group li {margin-bottom: 0.5em;}
+.form-group h3 {margin-bottom: 1em;}
+
+.form-fields input[type="text"],
+.form-fields input[type="tel"],
+.form-fields input[type="url"],
+.form-fields input[type="email"],
+.form-fields input[type="number"],
+.form-fields select {
+  box-sizing: border-box;
+  padding: 0.6em 0.8em;
+  color: #999;
+  border: 1px solid #e1e1e1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.9em;
+  text-decoration: none;
+  line-height: normal;
+  max-height: 3em;
+  /* Flex box styling */
+  flex: 1 0 230px;
+}
+
+.form-fields input[type="text"]:focus,
+.form-fields input[type="tel"]:focus,
+.form-fields input[type="url"]:focus,
+.form-fields input[type="email"]:focus,
+.form-fields input[type="number"]:focus,
+.form-food textarea:focus,
+.form-fields select:focus {
+  color: #333;
+  border: 1px solid #C17CCF;
+  outline: none;
+  background: #f2f2f2;
+}
+
+.form-food textarea {
+    display: block;
+    box-sizing: border-box;
+    font: 0.9em Helvetica, sans-serif;
+    width: 90%;
+    height: 6em;
+    overflow: auto;
+    padding: 0.6em 0.8em;
+    color: #999;
+    border: 1px solid #e1e1e1;
+    line-height: normal;
+}
+
+.register-btn {
+  border-radius: 0px 2px 2px 0px;
+  box-sizing: content-box;
+  background: #8B798C;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+  padding: 0.35em 0.75em;
+  border: none;
+  font-size: 1.1em;
+  text-decoration: none;
+  cursor: pointer;  
+}
+.register-btn:hover, .register-btn:focus {background: #8B995E;}
+
+/* Long Form Flexbox styles */
+.register-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1em;
+}
+
+.form-group {
+  flex: 1 0 300px;
+  margin-right: 1em;
+}
+
+.form-submit {
+  flex: 0 0 100%;
+}
+
+.form-fields li {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-fields label {
+  flex: 1 0 90px;
+  max-width: 200px;
+}
+
+.form-skills, .form-workshop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-skills li {
+  width: 145px;
+}
+
+.form-workshop li {
+  flex: 1 0 200px;
+}
